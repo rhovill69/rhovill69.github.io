@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 7</title>
+<meta charset="utf-8">
+<meta name="description" content="working with forms from float CSS to grid">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid black;
+  margin-top: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid #9c9c9c;
+}
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+.myinput {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  background-color: gold;
+}
+form div { text-align:center; }
+input[type="submit"], input[type="reset"] {
+  background: lightgray;
+  padding: 0.7em;
+  border: 0;
+}
+h1 { text-align: center; font-style: italic; color: gold; }
+
+</style>
+</head>
+<body>
+<h1>Assignment 7 - working with forms</h1>
+<form class="form1" action="#" method="post">
+
+<label for id="fullname">First Name </label>
+<input type="text" required name="fname" id="fname" size="62" maxlength="15"><br>
+
+<label for id="lastname">Last Name </label>
+<input type="text" placeholder="" required name="lastname" id="lastname" size="62" maxlength="25"><br>
+
+<label for id="age">Age </label>
+<input type="text" required name="age" id="age" size="62" min="18" maxlength="25"><br>
+
+<label for id="email">Email </label>
+<input type="text" required name="email" id="email" size="62" maxlength="25"><br>
+    
+<label for id="setdate">Date of your Membership </label>
+<input type="date" name="setdate" id="setdate" min="2021-04-27" max="2021-12-31" <br>
+
+<label for id="Rewards">Choose your reward </label>
+<select id="Rewards">
+
+<option>Two-year Member Magazine Subscription</option>
+<option>2 Tickets to Annual Seminar</option>
+<option>Voucher $100 food during seminar</option>
+<option>1-day hotel stay for seminar</option>
+</select>
+<br><br>
+
+    <div><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></div>
+</form>
+
+<div style="text-align:center">
+    <a href="homework1.html" rel="noopener noreferrer"> CNIT 132 homework1</a> 
+</div>  
+
+</body>
+</html>
