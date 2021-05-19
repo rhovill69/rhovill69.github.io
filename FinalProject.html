@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rhoel MOD 3 - HW - Mini Project 1</title>
+    <meta name="description" content="flexbox being used for three-column layout in desktop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+    <style> 
+        h1 { font-size: 2.5em; text-align: center; color: black;}
+        h2 { font-size: 1.25em; color: black; text-align: center}
+         
+        @import url(http://fonts.googleapis.com/css?family=Kalam);
+        body{
+          margin:0em;
+          font-family: 'Georgia', serif;
+          font-style: normal;
+          background-color: lightblue;
+        }
+        body > div{
+          display:flex;
+          flex-flow:row wrap;
+        }
+        body > div > header, Nav, main, footer{
+          color: #0f0101;
+          font-size: .9375em;
+          text-align: justify;
+          background: #999999;
+          background-color: darkgray;
+          border-radius:.4375em;
+          margin:.3125em;
+          padding:1.25em;
+        }
+        header{
+          order:1;
+          height:6.25em;
+          flex:0 1 100%; 
+        }
+        Nav{
+          order:2;
+          flex:0 1 9.375em;
+          color: blue;
+          font-size:.9375em;
+          text-align: left;
+          background-color: white;
+          background-image: url('Tiger3.gif');
+          background-repeat: no-repeat;
+          background-position: center,left;
+        }
+        main{
+          order:3;
+          min-height:25em;
+          flex:1;
+          background-color: white;
+        }
+        
+        footer{
+          height:6.25em;
+          order:4;
+          flex:0 1 100%;
+        }
+
+        /* @media screen and (max-width:30em) {
+          nav, aside { flex: 0 1 100%; }
+        } */
+    </style>
+    
+</head>
+    
+<body>
+    
+    <div>
+        <header><h1>Rhoel L. Villarin - CNIT 132</h1></header>
+            
+        <Nav><h2><strong>Menu</strong></h2>
+            <ul>
+            <li><a href="homework1.html">Home</a></li>
+            <li><a href="assignments.html" rel="noopener noreferrer">Assignments</a></li>
+            <li><a href="MeetUpReport.html">MeetUp Report</a></li>
+            </ul></Nav>
+        
+        <main><img src="GardenInTheDesert.jpg" alt="Garden in the Desert" width="100" height="150" />
+        
+        <p> My name is Rhoel Villarin. I grow up on an island surrounded by water west of the pacific. I have been in the United States for about eighteen years and leave most of my years in Northern California. The first city that I stayed in was Stockton, and then I move to Hayward, where I was recruited in the US Army. While on my active duty service, I was stationed at Fort Bliss, El Paso, Texas, and stayed there until I separated from my active service. I came back to Bay Area and joined the Signal Corps Battalion to continue my military service as a reserve soldier. As of this date, I am currently enrolled at CCSF, taking up special courses to enhance my skills in Information Technology.</p>
+  
+                
+        <p> As I started this course, CNIT 132, I realized that the web development course is interesting to track, and with the advanced subjects available to reinforce the knowledge, I think I will be a good web designer in the future working as a front-end developer. As I start digging information regarding web development, I came across this website that boost my interest in spending more time developing my front-end skills. If you're interested in web development and may want to consider a career as a front-end developer. This <a href="https://www.careerexplorer.com/careers/front-end-developer/" rel="noopener noreferrer"> website </a> can open the Pandora box for you to learn the specifics of a future web developer. </p>
+        
+        <p> <a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century" rel="noopener noreferrer">The Turn of the Century</a> </p>
+        <p> This website will give you the gist of how web development evolves. As the internet grows at lightning speed, part of this growth is developing a website to make it easy for the users to navigate. </p></main>
+        
+        
+        <footer><a href="contact.html" rel="noopener noreferrer"><strong>Contact Page</strong></a>
+        <p>Question and Comments, please click the Contact Page above, fillout the form, and click the Send button.</p>
+        Copyright &copy; Rhoel L. Villarin: <a href="mailto:rvilla76@mail.ccsf.edu" rel="noopener noreferrer">rvilla76@mail.ccsf.edu</a>  
+        </footer>
+        
+    </div>
+</body>
+</html>

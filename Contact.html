@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Assignment 7</title>
+<meta charset="utf-8">
+<meta name="description" content="working with forms from float CSS to grid">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{background-color: lightblue;}
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: .0625em solid black;
+  margin-top: 2rem;
+  max-width: 31.25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: white;
+  border: .0625em solid #9c9c9c;
+}
+label {
+  text-align: right;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+.myinput {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  background-color: gold;
+}
+form div { text-align:center; }
+input[type="submit"], input[type="reset"] {
+  background: #f48484;
+  padding: .8em;
+  border: 0;
+}
+h1 { text-align: center; font-style: italic; color: black; }
+
+</style>
+</head>
+<body>
+<h1>Contact Me Form</h1>
+<form class="form1" action="#" method="post">
+
+<label for="fname">Full Name - First/Last</label>
+<input type="text" required name="fname" id="fname" size="62" maxlength="15"><br>
+
+<label for="email">Email Address</label>
+<input type="email" required name="email" id="email" size="62" maxlength="25"><br>
+    
+    <div class="col-25">
+      <label for="subject">Comments</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" rows="5" cols="60" name="subject" placeholder="Write something..." style="height:12.5em"></textarea>
+    </div>
+    
+    <div>
+        <input type="submit" name="submit" value="Send"> &nbsp; 
+        <input type="reset" value="Clear">
+    </div>
+</form>   
+    <br><br>
+
+<div style="text-align:center">
+    <a href="FinalProject.html" rel="noopener noreferrer"> CNIT 132 homework1/ Final Project</a> 
+</div>  
+
+</body>
+</html>
